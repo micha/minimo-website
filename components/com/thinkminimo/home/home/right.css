@@ -1,0 +1,18 @@
+
+.clickable:hover a.learnmore {
+  text-decoration: underline;
+}
+
+.title {
+  float: left;
+}
+
+.title h2 {
+  line-height: 100%;
+  margin-top: 1px;
+  margin-right: 0.5em;
+  margin-bottom: -0.25em;
+  color: #fff;
+  background-color: #222;
+  padding: 4px;
+}

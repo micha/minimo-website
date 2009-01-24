@@ -1,0 +1,18 @@
+
+table {
+}
+
+td {
+  text-align: center;
+  font-size: 72pt !important;
+  font-weight: bold;
+  line-height: 0.85;
+  background-color: #222;
+  border: 1px solid #fff;
+  color: #fff;
+  padding-top: 5px;
+}
+
+td.empty {
+  background-color: #fff;
+}

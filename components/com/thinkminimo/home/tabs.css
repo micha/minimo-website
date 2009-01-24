@@ -1,0 +1,38 @@
+.tabs hr.nopad {
+  padding: 0;
+  margin: 0;
+}
+
+.tabs table {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.tabs td.tab {
+  text-align: center;
+  padding: 0.5em;
+}
+
+.tabs td.selected {
+  color: #666;
+  font-size: larger;
+  background-color: #222;
+}
+
+.tabs td.clickable {
+  cursor: pointer;
+}
+
+.tabs td.tab:hover a {
+  color: #ff2800;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.tabs td.tab a {
+  color: #aaa;
+}
+
+.tabs {
+  margin: 3em 0 4.5em 0;
+}

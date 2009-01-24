@@ -1,0 +1,15 @@
+
+{
+  padding: 2px;
+}
+
+.item {
+  border: 2px dashed #999;
+  font-style: italic;
+  color: #999;
+  padding: 10px;
+}
+
+.clickable:hover a.more_ads {
+  text-decoration: underline;
+}
