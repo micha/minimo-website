@@ -1,6 +1,6 @@
 
 {
-  padding: 2px;
+  padding: 1px;
 }
 
 .item {
@@ -10,6 +10,10 @@
   padding: 10px;
 }
 
-.clickable:hover a.more_ads {
+.item a.learnmore {
+  font-style: normal;
+}
+
+.clickable:hover a.learnmore {
   text-decoration: underline;
 }

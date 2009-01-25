@@ -10,13 +10,11 @@
 
 .tabs td.tab {
   text-align: center;
-  padding: 0.5em;
+  padding: 1em;
 }
 
 .tabs td.selected {
-  color: #666;
-  font-size: larger;
-  background-color: #222;
+  color: #ff2800;
 }
 
 .tabs td.clickable {
@@ -25,8 +23,7 @@
 
 .tabs td.tab:hover a {
   color: #ff2800;
-  font-size: larger;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .tabs td.tab a {

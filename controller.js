@@ -19,25 +19,25 @@ jQuery.golf.controllers = (function() {
 
   return {
     'left_pane/home': function(argv, b, match) {
+      if (b.get()[0] === document.body)
+        throw "action is not directly accessible";
       b.golf(pkg+".ads");
-      return true;
     },
 
     'left_pane/([^/]+)': function(argv, b, match) {
-      if (b.get()[0] === document) throw "action is not directly accessible";
+      if (b.get()[0] === document.body)
+        throw "action is not directly accessible";
       b.golf(pkg+".home.left", { section: sections[match[1]] });
-      return true;
     },
 
     'right_pane/([^/]+)': function(argv, b, match) {
-      if (b.get()[0] === document) throw "action is not directly accessible";
+      if (b.get()[0] === document.body)
+        throw "action is not directly accessible";
       b.golf(pkg+".home.right", { section: match[1] });
-      return true;
     },
 
     defaultAction: function(argv, b, match) {
       b.golf(pkg+".main", { tabs: tabs, tab: match[0], section: argv[0] });
-      return true;
     },
   };
 })();

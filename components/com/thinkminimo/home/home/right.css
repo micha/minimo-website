@@ -8,11 +8,15 @@
 }
 
 .title h2 {
-  line-height: 100%;
+  line-height: 125%;
   margin-top: 1px;
   margin-right: 0.5em;
-  margin-bottom: -0.25em;
+  margin-bottom: 0;
   color: #fff;
   background-color: #222;
-  padding: 4px;
+  padding: 0.35em;
+}
+
+.item {
+  margin-bottom: 2em;
 }
