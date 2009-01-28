@@ -1,12 +1,21 @@
 
 $(".title h2").text(argv.title);
 $(".body").append(argv.body);
-$(".learnmore").attr("href", argv.href);
 
-if (!serverside) {
+if (typeof argv.href === 'string')
+  argv.href = [argv.href];
+
+if (argv.href[1]) {
+  $("a.learnmore").empty();
+  $("a.learnmore").append(argv.href[1]);
+}
+
+$("a.learnmore").attr("href", "#"+argv.href[0]);
+$.golf.prepare($(".item"));
+
+if (argv.fatlink && !serverside) {
   $(".item").addClass("clickable");
   $(".item").click(function() {
     $(this).find("a.learnmore").click();
-    return false;
   });
 }

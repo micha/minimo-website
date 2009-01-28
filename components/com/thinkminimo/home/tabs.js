@@ -29,7 +29,6 @@ $.each(argv.tabs, function() {
       td.addClass("clickable");
       td.click(function() {
         $(this).find("a").click();
-        return false;
       });
     }
   }
