@@ -1,27 +1,21 @@
 
-var i, j, k, cols=0, rows=0;
+var width = (100 / argv.section[0].length) + "%";
 
-for (i in argv.section) {
-  k = 0;
-  for (j in argv.section[i].reverse()) {
-    if (argv.section[i][j].length > 0)
-      k++;
-    else
-      break;
-  }
-  if (k > cols) cols = k;
-  if (k == 0) break;
-  rows++;
-}
+var colgr = "<colgroup>";
+for (var i in argv.section[0])
+  colgr += "<col width='"+width+"'/>";
+colgr += "</colgroup>";
 
-for (i in argv.section) {
-  var td = $(".left_pane_section > table.section tr").eq(i).find("td:last");
-  var line = argv.section[i];
-  j = 0;
-  for (j in line) {
-    if (i >= rows || j >= cols) td.addClass("empty");
-    td.text(line[j]);
-    td = td.prev();
+$("table").prepend(colgr);
+
+for (var i in argv.section) {
+  var row = argv.section[i];
+  var tr  = $("<tr/>");
+  for (var j in row) {
+    var chr = row[j];
+    var td  = $("<td/>");
+    td.append(chr);
+    tr.append(td);
   }
-  argv.section[i].reverse();
+  $(".grid").append(tr);
 }

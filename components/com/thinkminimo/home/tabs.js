@@ -12,25 +12,17 @@ colgr += "</colgroup>";
 $("table").prepend(colgr);
   
 $.each(argv.tabs, function() {
-  var tab = this;
+  var a   = "<a href='"+this.href+"'>"+this.name+"</a>";
+  var td  = jQuery("<td class='tab'>"+a+"</td>");
 
-  var a;
-  var td;
-
-  if (this.name == argv.selected) {
-    a = this.name;
-    td = jQuery("<td class='tab'>"+a+"</td>");
+  if (this.name == argv.selected)
     td.addClass("selected");
-  } else {
-    a = "<a href='"+this.href+"'>"+this.name+"</a>";
-    td = jQuery("<td class='tab'>"+a+"</td>");
 
-    if (!serverside) {
-      td.addClass("clickable");
-      td.click(function() {
-        $(this).find("a").click();
-      });
-    }
+  if (!serverside) {
+    td.addClass("clickable");
+    td.click(function() {
+      $(this).find("a").click();
+    });
   }
 
   $(".tabcontainer").append($.golf.prepare(td));

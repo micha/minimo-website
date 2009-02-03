@@ -13,7 +13,11 @@
   padding: 1em;
 }
 
-.tabs td.selected {
+.tabs td.tab a {
+  color: #aaa;
+}
+
+.tabs td.selected a {
   color: #ff2800;
 }
 
@@ -26,10 +30,6 @@
   text-decoration: underline;
 }
 
-.tabs td.tab a {
-  color: #aaa;
-}
-
 .tabs {
-  margin: .75em 0 4.5em 0;
+  margin: 3.5em 0 4.5em 0;
 }
