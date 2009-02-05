@@ -3,22 +3,22 @@
     <title> </title>
     <meta name="robots" content="noindex,nofollow"/>
     <link 
-      rel="stylesheet" href="?path=/styles/blueprint/screen.css" 
+      rel="stylesheet" href="?path=styles/blueprint/screen.css" 
       type="text/css" media="screen, projection"/>
     <link 
-      rel="stylesheet" href="?path=/styles/blueprint/print.css" 
+      rel="stylesheet" href="?path=styles/blueprint/print.css" 
       type="text/css" media="print"/>
     <!--[if IE]>
       <link 
-        rel="stylesheet" href="?path=/styles/blueprint/ie.css" 
+        rel="stylesheet" href="?path=styles/blueprint/ie.css" 
         type="text/css" media="screen, projection"/>
     <![endif]-->
     <link 
-      rel="stylesheet" href="?path=/styles/style.css" 
+      rel="stylesheet" href="?path=styles/style.css" 
       type="text/css" media="screen, projection"/>
     <style type="text/css">
       /* whatever:hover IE hack */
-      body { behavior: url('?path=/styles/csshover3.htc'); }
+      body { behavior: url('?path=styles/csshover3.htc'); }
     </style>
     <script type="text/javascript">
       window.serverside   = __SVRSIDE__;
@@ -33,5 +33,21 @@
     <script type="text/javascript" src="?path=controller.js"></script>
   </head>
   <body>
+    <noscript>
+      <div style="color:#222;width:20em;margin:2em auto;padding:2em;border:1px solid black;font-family:sans-serif;text-align:justify">
+        <div style="margin:0 auto;text-align:center;">
+          <h2>Oops...</h2>
+        </div>
+        <p>It looks like your browser doesn't support javascript, or
+        maybe you've turned it off? You can still see this site by
+        choosing one of the following:</p>
+        <div style="padding:0 2em 0 2em">
+          <li><h3><a href=";jsessionid=__SESSION__?js=no&force=yes">Without Javascript</a></h3></li>
+          <li><h3><a href=";jsessionid=__SESSION__?js=yes&force=yes">With Javascript</a></h3></li>
+        </div>
+        <p><a href="http://www.google.com/support/websearch/bin/answer.py?hl=en&answer=23852">Google's enable javascript howto</a> shows how to get
+        javascript working in your browser.</p>
+      </div>
+    </noscript>
   </body>
 </html>

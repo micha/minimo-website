@@ -14,7 +14,7 @@ tr, td {
 }
 
 td.header {
-  background-image: url('?path=/images/minimosmall.jpg');
+  background-image: url('?path=images/minimosmall.png');
   background-repeat: no-repeat;
   background-position: 15px -2px;
   height: 128px;
