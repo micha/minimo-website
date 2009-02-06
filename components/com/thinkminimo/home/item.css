@@ -3,6 +3,11 @@
   margin-bottom: 2em;
 }
 
+a.golfproxylink, a.golfproxylink:hover {
+  text-decoration: none;
+  color: #222;
+}
+
 .clickable:hover a.learnmore {
   text-decoration: underline;
 }

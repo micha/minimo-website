@@ -13,7 +13,7 @@ if (argv.href[1]) {
 $("a.learnmore").attr("href", "#"+argv.href[0]);
 $.golf.prepare($(".item"));
 
-if (argv.fatlink && !serverside) {
+if (argv.fatlink) {
   $(".item").addClass("clickable");
   $(".item").click(function() {
     $(this).find("a.learnmore").click();

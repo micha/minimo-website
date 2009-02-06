@@ -10,6 +10,9 @@
 
 .tabs td.tab {
   text-align: center;
+}
+
+.tabs td.tab div.fatlink {
   padding: 1em;
 }
 
