@@ -12,7 +12,8 @@
   text-align: center;
 }
 
-.tabs td.tab div.fatlink {
+.tabs td.tab a.fatlink {
+  display: block;
   padding: 1em;
 }
 

@@ -3,11 +3,6 @@
   margin-bottom: 2em;
 }
 
-a.golfproxylink, a.golfproxylink:hover {
-  text-decoration: none;
-  color: #222;
-}
-
 .clickable:hover a.learnmore {
   text-decoration: underline;
 }
@@ -16,12 +11,12 @@ a.golfproxylink, a.golfproxylink:hover {
   float: left;
 }
 
-.title h2 {
+.title h2.title2 {
+  color: #fff;
+  background-color: #222;
   line-height: 125%;
   margin-top: 1px;
   margin-right: 0.5em;
   margin-bottom: 0;
-  color: #fff;
-  background-color: #222;
   padding: 0.35em;
 }

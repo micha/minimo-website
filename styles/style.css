@@ -1,4 +1,19 @@
 
+a {
+  color: #ff2800;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff2800;
+  text-decoration: underline;
+}
+
+a.golfproxylink, a.golfproxylink:hover {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .clickable {
   cursor: pointer;
 }
