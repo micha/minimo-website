@@ -16,6 +16,6 @@ $.golf.prepare($(".item"));
 if (argv.fatlink) {
   $(".item").addClass("clickable");
   $(".item").click(function() {
-    $.golf.onHistoryChange(argv.href[0]);
+    window.location = "#"+argv.href[0];
   });
 }

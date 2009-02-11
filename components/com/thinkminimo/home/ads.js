@@ -1,5 +1,5 @@
 
   $(".item").addClass("clickable");
   $(".item").click(function() {
-    $.golf.onHistoryChange("ads/");
+    window.location = "#ads/";
   });
