@@ -1,23 +1,22 @@
-function($, argv) {
+var width = (100 / argv.section[0].length) + "%";
+var colgr = "<colgroup>";
+var i;
+var j;
 
-  var width = (100 / argv.section[0].length) + "%";
+for (i in argv.section[0])
+  colgr += "<col width='"+width+"'/>";
+colgr += "</colgroup>";
 
-  var colgr = "<colgroup>";
-  for (var i in argv.section[0])
-    colgr += "<col width='"+width+"'/>";
-  colgr += "</colgroup>";
+$("table").prepend(colgr);
 
-  $("table").prepend(colgr);
-
-  for (var i in argv.section) {
-    var row = argv.section[i];
-    var tr  = $("<tr/>");
-    for (var j in row) {
-      var chr = row[j];
-      var td  = $("<td/>");
-      td.append(chr);
-      tr.append(td);
-    }
-    $(".grid").append(tr);
+for (i in argv.section) {
+  var row = argv.section[i];
+  var tr  = $("<tr/>");
+  for (j in row) {
+    var chr = row[j];
+    var td  = $("<td/>");
+    td.append(chr);
+    tr.append(td);
   }
+  $(".grid").append(tr);
 }
