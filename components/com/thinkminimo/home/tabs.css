@@ -1,39 +1,39 @@
-.tabs hr.nopad {
+div.tabs hr.nopad {
   padding: 0;
   margin: 0;
 }
 
-.tabs table {
+div.tabs table {
   padding: 0;
   margin: 0 auto;
 }
 
-.tabs td.tab {
+div.tabs td.tab {
   text-align: center;
 }
 
-.tabs td.tab a.fatlink {
+div.tabs td.tab a.fatlink {
   display: block;
   padding: 0.65em;
 }
 
-.tabs td.tab a {
+div.tabs td.tab a {
   color: #aaa;
 }
 
-.tabs td.selected a {
+div.tabs td.selected a {
   color: #ff2800;
 }
 
-.tabs td.clickable {
+div.tabs td.clickable {
   cursor: pointer;
 }
 
-.tabs td.tab:hover a {
+div.tabs td.tab:hover a {
   color: #ff2800;
   text-decoration: underline;
 }
 
-.tabs {
+div.tabs {
   margin: 3.5em 0 4.5em 0;
 }

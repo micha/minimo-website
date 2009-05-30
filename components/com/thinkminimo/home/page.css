@@ -2,6 +2,11 @@
   margin-bottom: 2em;
 }
 
+.body > a.learnmore {
+  display: block;
+  margin-bottom: 1.75em;
+}
+
 .clickable:hover a.learnmore {
   text-decoration: underline;
 }
