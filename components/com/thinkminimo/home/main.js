@@ -1,17 +1,19 @@
-function(tabset, pageset) {
-  /*
-  this.load = function(tab, section) {
-    document.title = "minimo software | " + argv.tab;
+function() {
+
+  this.load = function(tab) {
+    document.title = "minimo software | " + tab;
     tabs.load(tab);
-    body.load(tab, section);
   };
 
-  var tabs = new Component.com.thinkminimo.home.tabs(tabset);
-  var body = new Component.com.thinkminimo.home.page(pageset);
-  var foot = new Component.com.thinkminimo.home.footer();
+  this.left = function(cpn) {
+    $(".left_pane").empty().append(cpn);
+  };
 
-  $(".tabs").append(tabs);
-  $(".body").append(body);
-  $(".foot").append(foot);
-  */
+  this.right = function(cpn) {
+    $(".right_pane").empty().append(cpn);
+  };
+
+  var tabs = new Component.com.thinkminimo.home.tabs();
+
+  $(".tabs_container").append(tabs);
 }

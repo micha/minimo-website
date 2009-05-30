@@ -1,13 +1,15 @@
 function(section) {
-  var width, colgr, i, j, tr;
+  var width, i, j, tr;
 
   width = (100 / section[0].length) + "%";
 
-  colgr = $("<colgroup/>");
-  for (i in section[0])
-    colgr.append($("<col/>").attr("width", width));
-
-  $("table").prepend(colgr);
+  $("table").prepend(
+    $("<colgroup/>").append(
+      $.map(section[0], function() {
+        return $("<col/>").attr("width", width).get();
+      })
+    )
+  );
 
   for (i in section) {
     tr  = $("<tr/>");

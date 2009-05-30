@@ -14,13 +14,36 @@ $.golf.controller = (function() {
     url: "?path=data.json"
   });
     
-  alert(data);
+  var main = new Component.com.thinkminimo.home.main();
 
   return [
 
-    { route:  ".*",
+    { route:  "^/home/$",
       action: function(b, match) {
-        b.empty().append(new Component.com.thinkminimo.home.main());
+        alert("home");
+        b.empty().append(main);
+        for (var i in data) {
+          if (data[i].section == match[1]) {
+            main.left(new Component.com.thinkminimo.home.ads());
+            main.right(new Component.com.thinkminimo.home.page(data[i].body));
+          }
+        }
+        main.load(match[1]);
+        return false;
+      }
+    },
+
+    { route:  "^/([^/]+)/$",
+      action: function(b, match) {
+        b.empty().append(main);
+        for (var i in data) {
+          if (data[i].section == match[1]) {
+            main.left(new Component.com.thinkminimo.home.grid(data[i].grid));
+            main.right(new Component.com.thinkminimo.home.page(data[i].body));
+          }
+        }
+        main.load(match[1]);
+        return false;
       }
     }
 

@@ -3,7 +3,8 @@
     section:  "home",
     title:    "computed",
     grid:     [ ["m","o","d"], ["","","u"], ["l","a","r"] ],
-    exerpt:   "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    exerpt:   "<h2>home</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+
@@ -12,7 +13,8 @@
               "eu fugiat nulla pariatur. Excepteur sint occaecat "+
               "cupidatat non proident, sunt in culpa qui officia "+
               "deserunt mollit anim id est.</p>",
-    body:     "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    body:     "<h2>computed</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+
@@ -47,7 +49,8 @@
     section:  "home",
     title:    "responsive",
     grid:     [ ["","","r","e"], ["s","p","o","n"], ["s","i","v","e"] ],
-    exerpt:   "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    exerpt:   "<h2>responsive</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+
@@ -56,7 +59,8 @@
               "eu fugiat nulla pariatur. Excepteur sint occaecat "+
               "cupidatat non proident, sunt in culpa qui officia "+
               "deserunt mollit anim id est.</p>",
-    body:     "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    body:     "<h2>responsive</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+
@@ -91,7 +95,8 @@
     section:  "home",
     title:    "modular",
     grid:     [ ["","","r","e"], ["s","p","o","n"], ["s","i","v","e"] ],
-    exerpt:   "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    exerpt:   "<h2>modular</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+
@@ -100,7 +105,8 @@
               "eu fugiat nulla pariatur. Excepteur sint occaecat "+
               "cupidatat non proident, sunt in culpa qui officia "+
               "deserunt mollit anim id est.</p>",
-    body:     "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    body:     "<h2>modular</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+
@@ -135,7 +141,8 @@
     section:  "products",
     title:    "products",
     grid:     [ ["p","r","o"], ["","d","u"], ["c","t","s"] ],
-    body:     "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    body:     "<h2>products</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+
@@ -170,7 +177,8 @@
     section:  "services",
     title:    "services",
     grid:     [ ["s","e","r"], ["", "v","i"], ["c","e","s"] ],
-    body:     "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    body:     "<h2>services</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+
@@ -205,7 +213,8 @@
     section:  "lab",
     title:    "lab",
     grid:     [ ["l","a","b"] ],
-    body:     "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
+    body:     "<h2>lab</h2>"+
+              "<p>Lorem ipsum dolor sit amet, consectetur adipisicing "+
               "elit, sed do eiusmod tempor incididunt ut labore et "+
               "dolore magna aliqua. Ut enim ad minim veniam, quis "+
               "nostrud exercitation ullamco laboris nisi ut aliquip "+

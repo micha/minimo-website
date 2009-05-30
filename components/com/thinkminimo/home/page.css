@@ -1,5 +1,4 @@
-
-.item {
+.body {
   margin-bottom: 2em;
 }
 
@@ -7,11 +6,8 @@
   text-decoration: underline;
 }
 
-.title {
+h2 {
   float: left;
-}
-
-.title h2.title2 {
   color: #fff;
   background-color: #222;
   line-height: 125%;
