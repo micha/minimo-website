@@ -98,3 +98,7 @@ td.header {
 .footer {
   margin: 4.5em 0 4.5em 0;
 }
+
+p.caption {
+  text-align: center;
+}

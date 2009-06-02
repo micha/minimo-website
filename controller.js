@@ -21,14 +21,24 @@ $.golf.controller = (function() {
     { route:  "^/home/$",
       action: function(b, match) {
         b.empty().append(main);
-        var text;
-        for (var i in data) {
-          if (data[i].section == "home" && !!data[i].exerpt) {
-            text += data[i].exerpt;
-          }
+	var textSource = $.golf.res.content.home;
+        var ex = [];
+        for (var i in textSource) {
+        ex.push(new Component.com.thinkminimo.home.page(textSource[i], "excerpt"));
         }
+	main.right(ex);
         main.left(new Component.com.thinkminimo.home.ads());
-        main.right(new Component.com.thinkminimo.home.page(text));
+        main.load("home");
+        return false;
+      }
+    },
+
+    { route:  "^/home\/([^/]+)/$",
+      action: function(b, match) {
+        b.empty().append(main);
+        textSource = $.golf.res.content.home[match[1] + ".html"];
+        main.right(new Component.com.thinkminimo.home.page(textSource, "fullBody"));
+        main.left(new Component.com.thinkminimo.home.page(textSource, "left"));
         main.load("home");
         return false;
       }
@@ -37,6 +47,7 @@ $.golf.controller = (function() {
     { route:  "^/([^/]+)/$",
       action: function(b, match) {
         b.empty().append(main);
+        alert(match[1]);
         for (var i in data) {
           if (data[i].section == match[1]) {
             main.left(new Component.com.thinkminimo.home.grid(data[i].grid));

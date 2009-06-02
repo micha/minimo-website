@@ -1,6 +1,18 @@
-function(body) {
-  $(".body").append(body);
-
+function(postFile, mode) {
+    
+        // If you just want an excerpt of the article
+	if (mode == "excerpt")  {
+		$(".body").load(postFile + " .excerpt"); 
+	}
+        // if you want the laft pane content of the article
+        else if(mode == "left")  {
+        	$(".body").load(postFile + " .left");
+        }
+        // if you want the body of the article
+	else if(mode == "fullBody")  {
+		$(".body").load(postFile + " .boddy");
+	}
+	
   /*
   if (typeof argv.href === 'string')
     argv.href = [argv.href];

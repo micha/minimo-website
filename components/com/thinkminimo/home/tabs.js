@@ -1,6 +1,6 @@
 function(tabs) {
 
-  tabs = [ "home", "products", "services", "lab" ];
+  tabs = [ "home", "products", "services", "lab", "team" ];
 
   this.load = function(tab) {
     $(".tabcontainer td.tab").each(function(k,v) {
